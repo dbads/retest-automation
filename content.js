@@ -1,16 +1,16 @@
 console.log('hello there')
 
 function insertTriggerButton() {
-    let but = document.createElement("button")
-    but.innerText = "Run the pipeline"
-    but.style.background="green"
-    but.style.position="fixed"
-    but.style.borderRadius="50px"
-    but.style.borderColor="#23272C"
-    but.style.zIndex="#23272C"
-    but.style.marginTop="50px"
-    but.setAttribute("id", "trigger")
-    document.getElementsByClassName("gh-header-actions")[0].appendChild(but)
+    let triggerButton = document.createElement("button")
+    triggerButton.innerText = "Run the pipeline"
+    triggerButton.style.background="green"
+    triggerButton.style.position="fixed"
+    triggerButton.style.borderRadius="50px"
+    triggerButton.style.borderColor="#23272C"
+    triggerButton.style.zIndex="#23272C"
+    triggerButton.style.marginTop="50px"
+    triggerButton.setAttribute("id", "trigger")
+    document.getElementsByClassName("gh-header-actions")[0].appendChild(triggerButton)
     console.log('added button ----');
 }
 
