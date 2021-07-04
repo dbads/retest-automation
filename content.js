@@ -11,7 +11,6 @@ function insertTriggerButton() {
     triggerButton.style.marginTop="50px"
     triggerButton.setAttribute("id", "trigger")
     document.getElementsByClassName("gh-header-actions")[0].appendChild(triggerButton)
-    console.log('added button ----');
 }
 
 function addEventListenerToTriggerButton() {
@@ -19,11 +18,9 @@ function addEventListenerToTriggerButton() {
     document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
 
     document.getElementById("trigger").addEventListener("click", function() {
-        console.log("triggered ---, wuhooo");
         document.getElementById("new_comment_field").value="retest this please"; // type retest this please in the comment box
         commentButton.disabled=null; // enable the comment button
         commentButton.click(); // click the comment button
-        console.log('submitted--');
     })
 
     console.log('added evetn listener')
@@ -36,4 +33,5 @@ function insertButtonAndTriggerPipeline() {
 
 insertButtonAndTriggerPipeline()
 
+// relevent errors
 // Autofocus processing was blocked because a document already has a focused element.
