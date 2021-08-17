@@ -10,7 +10,7 @@ function insertTriggerButton() {
     triggerButton.style.zIndex="#23272C"
     triggerButton.style.marginTop="50px"
     triggerButton.setAttribute("id", "trigger")
-    document.getElementsByClassName("gh-header-actions")[0].appendChild(triggerButton)
+    document.getElementsByClassName("gh-header-actions")[0]?.appendChild(triggerButton)
 }
 
 function addEventListenerToTriggerButton() {
