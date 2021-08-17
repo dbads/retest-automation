@@ -17,13 +17,13 @@ function addEventListenerToTriggerButton() {
     let commentButton = document.evaluate('//*[@id="partial-new-comment-form-actions"]/div/div[2]/button', 
     document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
 
-    document.getElementById("trigger").addEventListener("click", function() {
+    document.getElementById("trigger")?.addEventListener("click", function() {
         document.getElementById("new_comment_field").value="retest this please"; // type retest this please in the comment box
         commentButton.disabled=null; // enable the comment button
         commentButton.click(); // click the comment button
     })
 
-    console.log('added evetn listener')
+    console.log('added event listener')
 }
 
 function insertButtonAndTriggerPipeline() {
