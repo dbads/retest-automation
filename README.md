@@ -1,6 +1,6 @@
 This extension allows me to retrigger Jenkins pipeline for my pull requests on Github.
 
-To Use you can unpack the extension. 
+To Use you can unpack the extension. <br>
 chrome://extensions/ > load unpacked > select the extension folder
 
 
